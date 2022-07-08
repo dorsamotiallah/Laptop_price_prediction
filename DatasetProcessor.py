@@ -92,6 +92,7 @@ df = pd.read_csv("products.csv")
 
 #rename columns
 df.rename(columns={"_key":"ProductID",
+                    "price":"Price",
                     "صفحه نمایش/اندازه صفحه نمایش":"DisplaySize",
                     "پردازنده مرکزی/محدوده سرعت پردازنده":"CPUSpeed",
                     "پردازنده مرکزی/حافظه Cache":"CPUCacheSize",
@@ -103,7 +104,7 @@ df.rename(columns={"_key":"ProductID",
                     },inplace=True)
 df.head()
 
-price = list(df["price"])
+price = list(df["Price"])
 weight = list(df["Weight"])
 displaySize = list(df["DisplaySize"])
 cpuSpeed = list(df["CPUSpeed"])
@@ -125,7 +126,7 @@ df['DisplayPixelHeight']=""
 
 # Substituting new values for old values
 for i in range(len(df)):
-    df.loc[i, 'price'] = price[i]
+    df.loc[i, 'Price'] = price[i]
     df.loc[i, 'Weight'] = weight[i]
     df.loc[i, 'DisplaySize'] = displaySize[i]
     df.loc[i, 'CPUSpeed'] = cpuSpeed[i]

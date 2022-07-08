@@ -1,4 +1,4 @@
-ProductID,price,Weight,CPUCompany,CPUModel,CPUSpeed,CPUCacheSize,RAMCapacity,RAMTechnology,DisplaySize,DisplayPixelWidth,DisplayPixelHeight
+ProductID,Price,Weight,CPUCompany,CPUModel,CPUSpeed,CPUCacheSize,RAMCapacity,RAMTechnology,DisplaySize,DisplayPixelWidth,DisplayPixelHeight
 807845,15900000,2.1,Intel,Core i3,2.0,4,4,DDR4,15.6,1366,768
 1165258,27500000,2.2,Intel,Core i7,2.0,8,16,DDR4,15.6,1920,1080
 1722266,49999000,1.37,Intel,Core i5,2.2,6,8,DDR4,13.3,2560,1600
